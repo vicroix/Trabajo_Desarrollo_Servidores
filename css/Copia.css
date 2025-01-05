@@ -1,0 +1,78 @@
+label {
+    font-family: 'Arial', sans-serif;
+    color: #007aff;}
+
+body{
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;            
+} 
+
+.btn-outline-success{
+    border-color: #007aff;
+    color: #007aff;
+}
+
+.btn-outline-success:hover{
+    background-color: #86b7fe;
+    border-color: #86b7fe;
+}
+
+.navbar{
+    background-color: #ecf1f7;
+    text-decoration: none;
+}
+
+.navbar a{
+    text-decoration: none;
+}
+.navbar .navbar-brand{
+    font-size: 30px;
+    color: #007bff;
+    font-family: 'Playfair Display';
+    text-decoration: none;
+}
+
+.navbar .navbar-brand{
+    font-size: 24px;
+    color: #007bff;
+
+}
+
+.d-flex .btn{
+    padding: 0.1rem 0.1rem;
+    width: 6.5rem;
+    font-size: 1rem;
+}
+
+.response {
+    border: 0rem solid #ced4da;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #ffffff;
+}
+
+.navbar .navbar-text {
+    color: #007aff;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+.navbar .d-flex .carritoCompra{
+    display: inline-block;
+    width: 2rem;  /* Ajusta el ancho según sea necesario */
+    height: 2rem; /* Ajusta la altura según sea necesario */
+    background-image: url("../images/carrito.png");
+    background-size: cover; /* Asegúrate de que la imagen cubra todo el área */
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.navbar .d-flex .carritoCompra:hover{
+    background-color: #d8e6f1;
+}
+
+.navbar .d-flex .buscadorCaja{
+    padding: 1rem 1rem;
+    width: 1rem;
+    height: 1rem;
+}

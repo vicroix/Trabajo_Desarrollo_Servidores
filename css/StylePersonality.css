@@ -1,0 +1,330 @@
+@font-face {
+  font-family: "abel";
+  src: url(Abel-Regular.ttf) format("ttf");
+}
+/*Texto informativo formularios. Ejemplo: "Usuario:"*/
+label {
+  font-family: abel;
+  color: #02475e;
+  font-size: 1rem;
+}
+/*Cuerpo y contenido de página"*/
+body {
+  font-family: "abel";
+  background-color: #f8f9fa;
+  min-height: 100vh;
+  flex-direction: column;
+  /*overflow-x: hidden;*/
+}
+.cuerpo-pagina {
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+  background: linear-gradient(
+    to center,
+    rgba(0, 0, 0, 0.1) 1px,
+    transparent 10px
+  );
+}
+.contenedor-color-principal {
+  background-color: #02475e;
+  padding: 0.85rem;
+}
+.contenido-cuerpo h1,
+.contenido-cuerpo h2 {
+  font-weight: bold;
+  color: #000;
+}
+.contenido-cuerpo h1 {
+  font-size: 1.5rem;
+}
+.contenido-cuerpo h2 {
+  font-size: 1.2rem;
+}
+.contenido-cuerpo h3 {
+  font-size: 1rem;
+}
+.contenido-cuerpo p,
+.contenido-cuerpo li {
+  font-size: 1rem;
+  margin: 0.5em 0;
+}
+.contenido-cuerpo .contact-info {
+  font-weight: bold;
+}
+.section-title {
+  font-weight: bold;
+  margin-top: 1.5rem;
+}
+/*Logo página*/
+.logoNav img {
+  width: 14rem;
+  height: 4rem;
+}
+/*Carrito de compra*/
+.carritoCompra {
+  width: 3.2rem;
+  border: none;
+}
+.carritoCompra svg {
+  width: 1.5rem;
+}
+.carritoCompra:hover svg {
+  fill: currentColor;
+  color: #86b7fe;
+}
+.carritoCompra:hover {
+  background-color: #86b7fe;
+  background: none;
+}
+.contenedor-cesta-compra {
+  border: none;
+}
+/*Fondo barra navegación*/
+.navbar {
+  background-color: #ffffff;
+  padding: 3;
+  border-bottom: 1px solid #02475e;
+}
+/*Categorias de Barra Navegación*/
+.menu-pricipal {
+  justify-content: center;
+  padding: 0;
+  margin: auto;
+  margin-left: 3rem;
+}
+.menu-pricipal li {
+  display: block;
+  margin: 0.2rem;
+  font-family: abel;
+  font-size: 1.2rem;
+  position: relative;
+}
+/*Enlaces: "Hombre, mujer, niños, niñas, marcas"*/
+.menu-pricipal li a {
+  color: #000000;
+  text-decoration: none;
+}
+.menu-pricipal li:hover ul {
+  display: block;
+}
+/*"Al pasar puntero, cambiar color del texto de categorias"*/
+.menu-pricipal > li:hover > a {
+  color: #060606;
+  font-weight: bold;
+}
+.submenu {
+  display: none;
+  position: absolute;
+  top: 2rem;
+  left: 0;
+  padding: 0;
+  background-color: #eaeef3;
+}
+.submenu li {
+  padding: 0.4rem 0.4rem;
+  font-family: abel;
+  font-size: 1rem;
+  color: #111;
+}
+.submenu li a {
+  color: #080808;
+}
+.submenu li:hover a {
+  text-decoration: underline;
+  text-decoration-color: #76a5af;
+  text-underline-offset: 0.4rem;
+  text-decoration-thickness: 2px;
+  font-weight: bold;
+}
+/*Input Identificación y Crear*/
+.botonCrearIdentificarse input {
+  background-color: #02475e;
+  border-color: #080808;
+  color: #ffffff;
+  padding: 5px 35px;
+  font-size: 1.2rem;
+}
+.botonCrearIdentificarse:hover input {
+  background-color: #012e3c;
+  border-color: #ffffff;
+}
+.boton-identificarse:focus {
+  box-shadow: 0 0 0 0.25rem rgba(0, 122, 255, 0.5);
+  outline: none;
+}
+.navbar .container-fluid ul {
+  padding: 0;
+  margin: 0;
+}
+.custom-modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.custom-modal .modal-content {
+  max-width: 1200px; /* Ancho máximo */
+  max-height: 90vh; /* Altura máxima relativa a la ventana */
+  overflow: auto; /* Permitir desplazamiento si el contenido es demasiado grande */
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+}
+/* Imagen dentro del modal */
+.modal-content img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+/* Botón de cerrar */
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 50%;
+  font-size: 16px;
+  cursor: pointer;
+}
+.close-btn:hover {
+  background-color: #d32f2f;
+}
+.card-img-top {
+  max-height: 500px;
+  object-fit: cover;
+}
+.footer {
+  background-color: #181818;
+  color: #fff;
+  padding: 40px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.seccion-footer {
+  min-width: 200px;
+  margin: 20px;
+}
+.seccion-footer h4 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+.seccion-footer ul {
+  list-style: none;
+  padding: 0;
+}
+.seccion-footer ul li {
+  margin: 5px 0;
+}
+.seccion-footer ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+}
+.seccion-footer ul li a:hover {
+  color: #aaa;
+}
+/*Iconos Footer "Medial Social" */
+.iconos-rrss svg {
+  width: 24px;
+  height: 24px;
+  fill: currentColor;
+  color: #b3b3b3;
+  margin: 3px;
+}
+.iconos-rrss a {
+  text-decoration: none;
+}
+.iconos-rrss a:hover svg {
+  fill: currentColor;
+  color: #76a5af;
+}
+/*Iconos Footer "Métodos de pago" */
+.iconos-de-pago svg {
+  width: 3rem;
+  height: 3rem;
+  fill: currentColor;
+  color: #ffffff;
+  margin: 3px;
+}
+.iconos-de-pago svg.excepcion {
+  fill: currentColor;
+  color: white;
+}
+.iconos-de-pago img {
+  width: 60px;
+  height: auto;
+  margin-top: 10px;
+  align-items: center;
+}
+/*Buscador barra navegación*/
+.buscador svg {
+  cursor: pointer;
+  margin-left: 5px;
+  width: 2rem;
+  height: 1.4rem;
+  margin: 0.5rem;
+}
+.buscador svg:hover {
+  fill: currentColor;
+  color: #86b7fe;
+}
+.buscador input {
+  background-color: #e6f0fa;
+}
+.btn-lupa {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #333333;
+}
+.boton-login {
+  border: none;
+  max-width: 3rem;
+}
+.boton-login:hover {
+  background: none;
+}
+.boton-login:hover svg {
+  color: #86b7fe;
+  background: none;
+}
+.boton-login svg {
+  width: 1.5rem;
+  height: 1.5rem;
+  fill: currentColor;
+  color: #111;
+  max-width: 2rem;
+}
+.crear-cuenta,
+.acceder-cuenta {
+  min-height: 70vh;
+}
+.acceder-cuenta a {
+  text-decoration: none;
+}
+.acceder-cuenta a:hover {
+  color: #02475e;
+  text-decoration: underline;
+  font-weight: bold;
+}
+.cerrarSesion {
+  background-color: #fff;
+  color: #000000;
+  border: 1px, solid #000000;
+}
+.cerrarSesion:hover {
+  background-color: #ee2020;
+}
+.texto-formulario {
+  border-color: #202020;
+}
