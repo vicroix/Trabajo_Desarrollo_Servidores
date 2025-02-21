@@ -67,7 +67,6 @@
                     </ul>
                 </li>
             </ul>
-            <!--Buscador-->
             <div class="buscador d-flex ms-auto">
                 <form class="d-flex ms-auto me-1">
                     <button type="submit" class="btn-lupa p-0">
