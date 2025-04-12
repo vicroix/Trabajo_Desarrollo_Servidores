@@ -115,12 +115,12 @@
         <div class="row justify-content-center">
             <div class="col-md-4 p-5 acceder-cuenta">
                 <h1 class="text-center">Bienvenido, accede a tu cuenta</h1>
-                <form action="../auth/servidor.php" method="post" class="p-4">
+                <form action="../auth/loginUsuariosbd.php" method="post" class="p-4">
                     <div class="mb-3">
-                        <input class="form-control texto-formulario" type="text" name="user" placeholder="Usuario">
+                        <input class="form-control texto-formulario" type="text" name="user" placeholder="usuario">
                     </div>
                     <div class="mb-3">
-                        <input class="form-control texto-formulario" type="password" name="psw" placeholder="Contraseña">
+                        <input class="form-control texto-formulario" type="password" name="psw" placeholder="contrasena">
                     </div>
                     <div class="text-center botonCrearIdentificarse">
                         <input class="btn btn-outline-success" type="submit" value="Identificarse">

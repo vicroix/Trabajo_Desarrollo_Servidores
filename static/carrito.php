@@ -1,4 +1,5 @@
 <?php session_start();
+include_once("../auth/config.php");
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -111,6 +112,32 @@
             <?php endif; ?>
         </div>
     </nav>
+    <?php
+    $id_producto = $_REQUEST['id'];
+    if (!empty($id_producto)) {
+        $result = mysqli_query($mysqli, "SELECT * FROM productos WHERE id = '$id_producto'");
+        if (mysqli_num_rows($result) > 0) {
+            // Recuperar los datos del producto
+            $producto = mysqli_fetch_assoc($result);
+        } else {
+            echo "No se encontró un producto con este ID.";
+        }
+    }
+    ?>
+    <div class="cesta-container">
+        <div class="cesta-header"><h2>Tu Cesta</h2></div>
+        <ul class="cesta-items">
+            <li>
+                <img src="../images/productos/<?php echo $producto['imagen'] ?>" alt="Producto 1" class="item-imagen">
+                <div class="item-detalles">
+                    <span class="item-nombre"><?php echo $producto['nombre'] ?></span>
+                    <span class="item-precio"><?php echo $producto['precio'] ?></span>
+                </div>
+            </li>
+        </ul>
+        <div class="cesta-total"></div>
+        <a href="#" class="cesta-btn">Proceder al Pago</a>
+    </div>
     <footer class="footer">
         <div class="seccion-footer">
             <h4>Atención al cliente</h4>

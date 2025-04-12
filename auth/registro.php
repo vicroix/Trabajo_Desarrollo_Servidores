@@ -116,7 +116,7 @@
         <div class="row justify-content-center">
             <div class="col-md-4">
                 <h2 class="text-center mt-4">Crea una nueva cuenta</h2>
-                <form action="servidor.php" method="post" class="p-4">
+                <form action="registroUsuariosbd.php" method="post" class="p-4">
                     <div class="mb-3">
                         <label class="form-label" for="usuario">Usuario:</label>
                         <input class="form-control texto-formulario" type="text" name="usuario">
@@ -124,6 +124,10 @@
                     <div class="mb-3">
                         <label class="form-label" for="contrasena">Contraseña:</label>
                         <input class="form-control texto-formulario" type="password" name="contrasena">
+                    </div>
+                    <div class="mb-4">
+                        <label class="form-label" for="email">Email:</label>
+                        <input class="form-control texto-formulario" type="email" name="email">
                     </div>
                     <div class="text-center botonCrearIdentificarse">
                         <input class="btn btn-outline-success" type="submit" value="Crear cuenta">
